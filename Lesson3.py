@@ -44,10 +44,12 @@ print(dict([('Cha', len(Cha)),('Sym', len(Sym)), ('Dig', len(Dig))]))
 # Ví du: "Welcome to USA. usa awesome, isn't it?" --> The USA count is: 2
 s=str(input("Input a string: "))
 s_upper=s.upper()
-count=0
-if "USA" in s_upper:
-    count+=1
-print(count)
+sub_string='USA'
+# convert string to lowercase
+
+# use count function
+count = s_upper.count(sub_string)
+print("The USA count is:", count)
 
 
 #[DONE]Bài 6: Cho một chuỗi s1, hãy viết chương trình trả về tổng và trung bình cộng của các chữ số xuất hiện trong chuỗi, bỏ qua tất cả các ký tự khác. Ví dụ: str1 = "PYnative29@#8496" --> Sum is: 38 Average is 6.333333333333333

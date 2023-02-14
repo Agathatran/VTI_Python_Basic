@@ -1,0 +1,8 @@
+s=str(input("Input a string: "))
+s_upper=s.upper()
+sub_string='USA'
+# convert string to lowercase
+
+# use count function
+count = s_upper.count(sub_string)
+print("The USA count is:", count)
