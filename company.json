@@ -1,0 +1,12 @@
+{
+    "company": {
+        "employee1": {
+            "name": "Pham Van Nam",
+            "payable": {
+                "bonus": "300$",
+                "salary": "1200$"
+            },
+            "position": "Leader"
+        }
+    }
+}

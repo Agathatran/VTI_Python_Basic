@@ -74,3 +74,17 @@ class Math_Operation:
             newlst=[i+j for (i,j) in zip(lst1,lst2)]
             newstr = ''.join(newlst)
             print(f'The new list is: {newstr}')
+'''Viết hàm main() bên ngoài class để thực hiện các yêu cầu sau:
+- Tạo một đối tượng của class Math_Operation:
+- Hiển thị tổng của 2 thuộc tính của đối tượng vừa tạo.
+- Gán giá trị mới cho 2 thuộc tính của đối tượng là 2 list có cùng số lượng phần tử. Sau đó hiển thị list thứ 3.
+- Gán giá trị mới cho 2 thuộc tính của đối tượng là 2 string có cùng số lượng ký tự. Sau đó hiển thị string thứ 3.'''
+
+def main():
+    math_ope = Math_Operation(x,y)
+    math_ope.func_6(x,y)
+    math_ope.func_7(list(x),list(y))
+    math_ope.func_8(str(x), str(y))
+
+
+
