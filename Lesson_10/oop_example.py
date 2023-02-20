@@ -45,4 +45,21 @@ print(f'Color: {motor_o.get_color()}')
 print(f'Max speed: {motor_o.get_max_speed()}')
 print(f'Year: {motor_o.get_yearold()}')
 
+'''
+3. Define class Car which inherited from Vehicle
+- Add one more private property: branch
+- Add one more method to return branch information
+- Overide method get_yearold(): add more yearold for each Car
+- Init a Car object, then print all information
+'''
 
+class Car(Vehicle):
+    def __init__(self, name, branch, max_speed =100, color ='red', year =2020):
+        self.branch = branch
+        super.__init__(name, max_speed, color, year)
+
+    def get_branch(self):
+        return self.get_branch
+
+    def get_yearold(self):
+        return super().get_yearold()+10

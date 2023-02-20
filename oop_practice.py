@@ -32,7 +32,14 @@ class Student(Staff):
         super().__init__(role, department, salary)
 
 # 3.3 Create a new object of Student then show all attributes of that object.
-# ---> DON'T UNDERSTAND
+
+stu_info = Student()
+print(f'Name: {stu_info.name}')
+print(f'Age: {stu_info.age}')
+print(f'Email: {stu_info.email}')
+print(f'Sex: {stu_info.sex}')
+
+
 # 4.
 # 4.1 Define a class named Geometry with 2 methods: get_area() and get_perimeter().
 class Geometry():
@@ -58,5 +65,16 @@ class Square(Geometry):
 # 4.3 Define a class named Circle which inherited from Geometry class. This class has 1 attribute is radius. 
 # Override 2 methods of its parrent  class.
 
+class Circle(Geometry):
+    def __init__(self, radius):
+        self.radius = radius
+    
+    def get_area(self):
+        return super().get_area()
+    
+    def get_perimether(self):
+        return super().get_perimether()
+    
+    
 # 4.4 Create a new object of class Square and a new object of class Circle. Print area and primeter of those.
 
