@@ -47,6 +47,14 @@ class Geometry():
         self.length=length
         self.width = width 
         self.radius = radius
+    
+# 4.2 Define a class named Square which inherited from Geometry class. This class has 2 attributes are length and width. 
+# Override two methods from its parrent.
+
+class Square(Geometry):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
 
     def get_area(self):
         area = self.length * self.width
@@ -55,13 +63,7 @@ class Geometry():
     def get_perimether(self):
         perimether = 2* (self.length + self.width)
         return perimether
-    
-# 4.2 Define a class named Square which inherited from Geometry class. This class has 2 attributes are length and width. 
-# Override two methods from its parrent.
-
-class Square(Geometry):
-    def __init__(self, length, width):
-        super().__init__(length, width)
+        
 # 4.3 Define a class named Circle which inherited from Geometry class. This class has 1 attribute is radius. 
 # Override 2 methods of its parrent  class.
 
@@ -70,11 +72,21 @@ class Circle(Geometry):
         self.radius = radius
     
     def get_area(self):
-        return super().get_area()
+        area = self.radius **2 *3.14
+        return area
     
     def get_perimether(self):
-        return super().get_perimether()
+        perimeter = self.radius *2 *3.14
     
-    
+def func(obj):
+    obj.get_area()
+    obj.get_perimether()
+
+Circle_o= Circle()
+Square_o = Square()
+
+for shape in [Circle_o, Square_o]:
+    func(shape)
+
 # 4.4 Create a new object of class Square and a new object of class Circle. Print area and primeter of those.
 
