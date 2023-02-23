@@ -1,4 +1,4 @@
-def Grading_Scheme():
+def Grading_info():
     print('Please choose one of the following functions')
     print('Input grade')
     print('Edit Grade')
@@ -17,4 +17,4 @@ def Grading_Scheme():
         sub_input = str(input('Input the subject number or subject name'))
     elif str_in == "SUMMARY OF RESULTS":
         print('Here is the result.')
-Grading_Scheme()
+Grading_info()

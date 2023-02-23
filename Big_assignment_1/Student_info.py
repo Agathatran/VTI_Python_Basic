@@ -1,6 +1,5 @@
 def Student_info():
     print('Please choose one of the following functions')
-    
     print('Add')
     print('Edit')
     print('Delete') 
