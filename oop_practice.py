@@ -38,6 +38,7 @@ print(f'Name: {stu_info.name}')
 print(f'Age: {stu_info.age}')
 print(f'Email: {stu_info.email}')
 print(f'Sex: {stu_info.sex}')
+print(f"Add some thing fun to test")
 
 
 # 4.
