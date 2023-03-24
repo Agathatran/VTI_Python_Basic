@@ -1,0 +1,8 @@
+- Tạo thư mục lớn ngoài cùng: Final_Exam
+bên trong có các thư mục con tương ứng với 3 bài: Bai_1, Bai_2, Bai_3
+trong mỗi thư mục (Bai_1, …), có 1 file readme.txt, nội dung là hướng dẫn chạy chương trình
+
+
+file dóc bài th lt cũng bỏ vô thư mục final_exam
+
+upload tất cả lên GitHub và gửi lại link
